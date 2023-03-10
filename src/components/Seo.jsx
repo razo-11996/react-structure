@@ -1,38 +1,39 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 
 export function Seo(props) {
-  // eslint-disable-next-line react/prop-types
-  const { name, title, type, description, imgName } = props;
-  let version = 1;
-  // eslint-disable-next-line no-restricted-globals
-  const pageUrl = `${location.href}/?v=${version}`;
+  const [title, setTitle] = useState("My Website");
+  const [description, setDescription] = useState("This is my website.");
+  const [imageUrl, setImageUrl] = useState("https://example.com/image.jpg");
+  const [url, setUrl] = useState("https://example.com");
 
+  // Update meta tags based on component props
   useEffect(() => {
-    version++;
-    console.log(version);
-  }, [version]);
+    // eslint-disable-next-line react/prop-types
+    setTitle(props.title);
+    // eslint-disable-next-line react/prop-types
+    setDescription(props.description);
+    // eslint-disable-next-line react/prop-types
+    setImageUrl(props.imageUrl);
+    // eslint-disable-next-line react/prop-types
+    setUrl(props.imageUrl);
+  }, [props]);
 
   return (
-    <Helmet prioritizeSeoTags>
-      {/* Standard metadata tags */}
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      {/* End standard metadata tags */}
-      {/* Facebook tags */}
-      <meta property="og:type" content={type} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={imgName} />
-      {/* End Facebook tags */}
-      {/* Twitter tags */}
-      <meta name="twitter:creator" content={name} />
-      <meta name="twitter:card" content={type} />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      {/* eslint-disable-next-line no-restricted-globals */}
-      <meta property="og:url" content={pageUrl} />
-      {/* End Twitter tags */}
-    </Helmet>
+    <div>
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={imageUrl} />
+        <meta property="og:url" content={url} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={imageUrl} />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+      {/* Rest of component */}
+    </div>
   );
 }
