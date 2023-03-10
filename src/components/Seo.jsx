@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 export function Seo(props) {
   // eslint-disable-next-line react/prop-types
