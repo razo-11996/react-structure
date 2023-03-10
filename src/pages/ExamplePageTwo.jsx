@@ -5,13 +5,13 @@ export default function ExamplePageTwo() {
   return (
     <Fragment>
       <Seo
-        title="Learning React Helmet!"
+        title="Learning React Helmet! Two"
         description="Beginner friendly page for learning React Helmet. Page Two"
         name="Company name."
         type="article"
         imgName="two.jpeg"
       />
-      <h1>Page One</h1>
+      <h1>Page Two</h1>
     </Fragment>
   );
 }
