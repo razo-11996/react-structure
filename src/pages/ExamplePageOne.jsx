@@ -9,7 +9,7 @@ export default function ExamplePageOne() {
         description="Beginner friendly page for learning React Helmet. Page One"
         name="Company name."
         type="article"
-        imgName="one.webp"
+        imgName="images/one.webp"
       />
       <h1>Page One</h1>
     </Fragment>
