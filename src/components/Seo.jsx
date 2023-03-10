@@ -11,7 +11,7 @@ export function Seo(props) {
   useEffect(() => {
     version++;
     console.log(version);
-  }, []);
+  }, [version]);
 
   return (
     <Helmet prioritizeSeoTags>
