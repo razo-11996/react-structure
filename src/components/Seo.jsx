@@ -5,7 +5,7 @@ export function Seo(props) {
   const { name, title, type, description, imgName } = props;
 
   return (
-    <Helmet>
+    <Helmet prioritizeSeoTags>
       {/* Standard metadata tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
