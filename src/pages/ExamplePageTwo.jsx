@@ -1,16 +1,17 @@
-import { Fragment, useLayoutEffect } from "react";
+import { Fragment } from "react";
+import { Seo } from "../components/Seo";
 
 export default function ExamplePageTwo() {
-  useLayoutEffect(() => {
-    document.title = "Learning how to add dynamic meta tags in react";
-    const metaImg = document.createElement("meta");
-    metaImg.setAttribute("og:images", "images/two.jpeg");
-    document.head.append(metaImg);
-  }, []);
-
   return (
     <Fragment>
-      <h1>Page Two</h1>
+      <Seo
+        title="Learning React Helmet!"
+        description="Beginner friendly page for learning React Helmet. Page Two"
+        name="Company name."
+        type="article"
+        imgName="two.jpeg"
+      />
+      <h1>Page One</h1>
     </Fragment>
   );
 }

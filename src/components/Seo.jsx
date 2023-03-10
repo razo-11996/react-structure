@@ -21,6 +21,8 @@ export function Seo(props) {
       <meta name="twitter:card" content={type} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
+      {/* eslint-disable-next-line no-restricted-globals */}
+      <meta property="og:url" content={location.href} />
       {/* End Twitter tags */}
     </Helmet>
   );
