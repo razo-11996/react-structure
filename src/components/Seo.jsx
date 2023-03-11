@@ -16,7 +16,7 @@ class Seo extends React.Component {
     return (
       <div>
         <Helmet>
-          <title>{this.state.title}</title>
+          <title>{this.props.title}</title>
           <meta name="description" content={this.props.description} />
           <meta property="og:title" content={this.props.title} />
           <meta property="og:description" content={this.props.description} />
