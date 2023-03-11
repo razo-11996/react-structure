@@ -8,7 +8,7 @@ class Seo extends React.Component {
       title: "Dynamic Title",
       description: "Dynamic Description",
       url: window.origin,
-      imageUrl: window.origin + "/images/two.jpeg",
+      imageUrl: window.origin + "%PUBLIC_URL%/images/two.jpeg",
     };
   }
 
