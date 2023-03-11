@@ -5,11 +5,11 @@ export default function ExamplePageOne() {
   return (
     <Fragment>
       <Seo
-        title="Learning React Helmet!"
+        title="Page One Dynamic Title"
         description="Page One"
         name="Company name."
         type="article"
-        imgUrl={`${window.origin}/images/one.webp`}
+        imgUrl={`%PUBLIC_URL%/images/one.webp`}
       />
       <h1>Page One</h1>
     </Fragment>
