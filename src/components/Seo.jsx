@@ -8,7 +8,7 @@ class Seo extends React.Component {
       title: "Dynamic Title",
       description: "Dynamic Description",
       url: window.origin,
-      imageUrl: window.origin + "%PUBLIC_URL%/images/two.jpeg",
+      imageUrl: "%PUBLIC_URL%/images/two.jpeg",
     };
   }
 
@@ -21,8 +21,8 @@ class Seo extends React.Component {
           <meta property="og:title" content={this.state.title} />
           <meta property="og:description" content={this.state.description} />
           <meta property="og:image" content={this.state.imageUrl} />
-          <meta property="og:image:width" content="500" />
-          <meta property="og:image:height" content="500" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="600" />
           <meta property="og:url" content={this.state.url} />
           <meta name="twitter:title" content={this.state.title} />
           <meta name="twitter:description" content={this.state.description} />
