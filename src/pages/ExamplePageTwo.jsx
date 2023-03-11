@@ -9,7 +9,7 @@ export default function ExamplePageTwo() {
         description="Page Two"
         name="Company name."
         type="article"
-        imgUrl={`${window.origin}/images/two.jpeg`}
+        imgUrl={`https://640ce3143e8b1000085413bb--singular-cat-b72cc0.netlify.app/images/two.jpeg`}
       />
       <h1>Page two</h1>
     </Fragment>

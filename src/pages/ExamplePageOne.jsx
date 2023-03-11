@@ -9,7 +9,7 @@ export default function ExamplePageOne() {
         description="Page One"
         name="Company name."
         type="article"
-        imgUrl={`${window.origin}/images/one.webp`}
+        imgUrl={`https://640ce3143e8b1000085413bb--singular-cat-b72cc0.netlify.app/images/one.webp`}
       />
       <h1>Page One</h1>
     </Fragment>
