@@ -21,6 +21,8 @@ class Seo extends React.Component {
           <meta property="og:title" content={this.state.title} />
           <meta property="og:description" content={this.state.description} />
           <meta property="og:image" content={this.state.imageUrl} />
+          <meta property="og:image:width" content="500" />
+          <meta property="og:image:height" content="500" />
           <meta property="og:url" content={this.state.url} />
           <meta name="twitter:title" content={this.state.title} />
           <meta name="twitter:description" content={this.state.description} />
