@@ -6,7 +6,7 @@ export default function ExamplePageOne() {
     <Fragment>
       <Seo
         title="Learning React Helmet!"
-        description="Beginner friendly page for learning React Helmet. Page One"
+        description="Page One"
         name="Company name."
         type="article"
         imgUrl={`${window.origin}/images/one.webp`}
