@@ -11,7 +11,7 @@ export default function ExamplePageTwo() {
         type="article"
         imgName="two.jpeg"
       />
-      <h1>Page One</h1>
+      <h1>Page two</h1>
     </Fragment>
   );
 }
