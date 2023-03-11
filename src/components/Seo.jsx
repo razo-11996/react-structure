@@ -2,15 +2,6 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 
 class Seo extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      title: "Dynamic Title",
-      description: "Dynamic Description",
-      url: window.origin,
-      imageUrl: `${window.origin}/images/two.jpeg`,
-    };
-  }
   render() {
     return (
       <div>
@@ -22,7 +13,7 @@ class Seo extends React.Component {
           <meta property="og:image" content={this.props.imgUrl} />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
-          <meta property="og:url" content={this.props.url} />
+          <meta property="og:url" content={window.origin} />
           <meta name="twitter:title" content={this.props.title} />
           <meta name="twitter:description" content={this.props.description} />
           <meta name="twitter:image" content={this.props.imageName} />
