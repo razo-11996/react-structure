@@ -9,7 +9,7 @@ export default function ExamplePageTwo() {
         description="Beginner friendly page for learning React Helmet. Page Two"
         name="Company name."
         type="article"
-        imgName={`${window.origin}/images/two.jpeg`}
+        imgUrl={`${window.origin}/images/two.jpeg`}
       />
       <h1>Page two</h1>
     </Fragment>
