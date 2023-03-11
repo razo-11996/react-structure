@@ -7,7 +7,7 @@ class Seo extends React.Component {
     this.state = {
       title: "Dynamic Title",
       description: "Dynamic Description",
-      url: window.location,
+      url: window.origin,
       imageUrl: window.origin + "/images/two.jpeg",
     };
   }
