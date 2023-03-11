@@ -8,7 +8,7 @@ class Seo extends React.Component {
       title: "Dynamic Title",
       description: "Dynamic Description",
       url: window.origin,
-      imageUrl: "%PUBLIC_URL%/images/two.jpeg",
+      imageUrl: `${window.origin}/images/two.jpeg`,
     };
   }
 
@@ -17,16 +17,16 @@ class Seo extends React.Component {
       <div>
         <Helmet>
           <title>{this.state.title}</title>
-          <meta name="description" content={this.state.description} />
-          <meta property="og:title" content={this.state.title} />
-          <meta property="og:description" content={this.state.description} />
-          <meta property="og:image" content={this.state.imageUrl} />
+          <meta name="description" content={this.props.description} />
+          <meta property="og:title" content={this.props.title} />
+          <meta property="og:description" content={this.props.description} />
+          <meta property="og:image" content={this.props.imageUrl} />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="600" />
-          <meta property="og:url" content={this.state.url} />
-          <meta name="twitter:title" content={this.state.title} />
-          <meta name="twitter:description" content={this.state.description} />
-          <meta name="twitter:image" content={this.state.imageUrl} />
+          <meta property="og:url" content={this.props.url} />
+          <meta name="twitter:title" content={this.props.title} />
+          <meta name="twitter:description" content={this.props.description} />
+          <meta name="twitter:image" content={this.props.imageUrl} />
           <meta name="twitter:card" content="summary_large_image" />
         </Helmet>
         {/* Rest of component */}
