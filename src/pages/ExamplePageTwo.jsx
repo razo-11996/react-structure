@@ -9,7 +9,7 @@ export default function ExamplePageTwo() {
         description="Page Two"
         name="Company name."
         type="article"
-        imgUrl={`%PUBLIC_URL%/images/two.jpeg`}
+        imgUrl={`${window.origin}/images/two.jpeg`}
       />
       <h1>Page two</h1>
     </Fragment>

@@ -11,7 +11,6 @@ class Seo extends React.Component {
       imageUrl: `${window.origin}/images/two.jpeg`,
     };
   }
-
   render() {
     return (
       <div>
@@ -22,7 +21,7 @@ class Seo extends React.Component {
           <meta property="og:description" content={this.props.description} />
           <meta property="og:image" content={this.props.imgUrl} />
           <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="600" />
+          <meta property="og:image:height" content="630" />
           <meta property="og:url" content={this.props.url} />
           <meta name="twitter:title" content={this.props.title} />
           <meta name="twitter:description" content={this.props.description} />

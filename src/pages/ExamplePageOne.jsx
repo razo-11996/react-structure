@@ -9,7 +9,7 @@ export default function ExamplePageOne() {
         description="Page One"
         name="Company name."
         type="article"
-        imgUrl={`%PUBLIC_URL%/images/one.webp`}
+        imgUrl={`${window.origin}/images/one.webp`}
       />
       <h1>Page One</h1>
     </Fragment>
